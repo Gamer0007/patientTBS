@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const ROOT_API= process.env.NEXT_PUBLIC_API;
-const API_VERSON= 'api/v1';
+const API_VERSON= 'api/v1'
 
 export async function getFeaturedGame(){
     const URL= 'players/landingpage';

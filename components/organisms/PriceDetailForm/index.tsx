@@ -6,7 +6,7 @@ export default function priceDetailForm() {
         <div className="pt-md-50 pb-md-50 pt-30 pb-20">
             <p className="text-lg fw-medium color-palette-1 mb-md-10 mb-0">Price Information</p>
             <div className="row justify-content-between">
-                <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
+                {/* <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
                     for="topup1">
                     <input className="d-none" type="radio" id="topup1" name="topup" value="topup1"/>
                     <div className="detail-card">
@@ -23,7 +23,7 @@ export default function priceDetailForm() {
                         </div>
                         <p className="text-lg color-palette-1 m-0">Rp 250.000</p>
                     </div>
-                </label>
+                </label> */}
                 <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
                     for="topup2">
                     <input className="d-none" type="radio" id="topup2" name="topup" value="topup2"/>
@@ -42,7 +42,7 @@ export default function priceDetailForm() {
                         <p className="text-lg color-palette-1 m-0">Rp 150.000</p>
                     </div>
                 </label>
-                <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
+                {/* <label className="col-lg-4 col-sm-6 ps-md-15 pe-md-15 pt-md-15 pb-md-15 pt-10 pb-10"
                     for="topup3">
                     <input className="d-none" type="radio" id="topup3" name="topup" value="topup3"/>
                     <div className="detail-card">
@@ -95,7 +95,7 @@ export default function priceDetailForm() {
                         </div>
                         <p className="text-lg color-palette-1 m-0">Rp 500.000</p>
                     </div>
-                </label>
+                </label> */}
                 <div className="col-lg-4 col-sm-6">
                 </div>
             </div>

@@ -14,6 +14,8 @@ import '../styles/transactions.css'
 import '../styles/transactions-detail.css'
 import '../styles/edit-profile.css'
 import '../styles/navbar-log-in.css'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -47,6 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   </Head>
   <Component {...pageProps} />
+  <ToastContainer/>
   </>
   )
 }

@@ -27,6 +27,8 @@ export default function index() {
             </div>
             <Illustartion />
         </div>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-40d36a8d-bce4-43a3-bea8-06f8d847652b"></div>
     </div>
 </section>
     )
