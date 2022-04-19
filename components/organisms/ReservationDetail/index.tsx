@@ -4,8 +4,9 @@ import { useRouter } from "next/router";
 
 export default function ReservationDetail() {
     const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [lementation, setLementation] = useState('');
+    const [treatment, setTreatment] = useState('');
 
     const router = useRouter();
     const className = {
@@ -13,9 +14,10 @@ export default function ReservationDetail() {
     };
     const onSubmit = () => {
         const userForm = {
-            email,
+            phoneNumber,
             name, 
-            password
+            lementation,
+            treatment
         }
         localStorage.setItem('user-form', JSON.stringify(userForm));
         router.push('/sign-up-photo');
@@ -43,10 +45,10 @@ export default function ReservationDetail() {
             <label className={className.label}>Phone Number</label>
             <input type="text" 
             className="form-control rounded-pill text-lg" 
-            aria-describedby="email" 
+            aria-describedby="phoneNumber" 
             placeholder="Enter your phone number"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            value={phoneNumber}
+            onChange={(event) => setPhoneNumber(event.target.value)}
             />
         </div>
         </div>
@@ -57,8 +59,20 @@ export default function ReservationDetail() {
             className="form-control rounded-pill text-lg" 
             aria-describedby="password" 
             placeholder="Presenting complaint"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
+            value={lementation}
+            onChange={(event) => setLementation(event.target.value)}
+            />
+        </div>
+        </div>
+        <div style={{justifyContent:'center', alignItems:'center', display:'flex'}}>
+        <div className="pt-30">
+            <label className={className.label}>Treatment</label>
+            <input type="text" 
+            className="form-control rounded-pill text-lg" 
+            aria-describedby="password" 
+            placeholder="Presenting complaint"
+            value={treatment}
+            onChange={(event) => setTreatment(event.target.value)}
             />
         </div>
         </div>
@@ -70,6 +84,7 @@ export default function ReservationDetail() {
                     role="button">Reservation</a>
                     </div>
         </div>
+        
     
     </>
     )
